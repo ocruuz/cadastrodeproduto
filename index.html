@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Cadastro de Produtos</h1>
+        <div id="nome_produto">
+        <label for="campo_nome">Nome do Produto:</label>
+        <input id="campo_nome" type="text" name="produtos" required>
+        </div>
+        <br>
+        <div id="codigo_campo">
+        <label for="campo_codigo">Código do Produto:</label>
+        <input id="campo_codigo" type="text" name="codigo" required>
+        </div>
+        <br>
+        <div id="preco_produto">
+        <label for="preco">Preço:</label>
+        <input id="preco" type="number" name="preco" min="0" step="0.01" required>
+        </div>
+        <br>
+        <div id="qnt_estoque">
+        <label for="estoque">Quantidade em Estoque:</label>
+        <input id="estoque" type="number" name="estoque" min="0" required>
+        </div>
+        <br>
+        <div id="categorias">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+            <option selected disabled value="">Selecione uma Categoria:</option>
+             <option value="calcados">Calçados</option>
+             <option value="eletronicos">Eletrônicos</option>
+             <option value="vestuario">Vestuário</option>
+             <option value="acessorios">Acessórios</option>
+             <option value="outros">Outros</option>
+        </select>
+        </div>
+        <br>
+        <div id="descrever">
+        <textarea placeholder="Descrição do Produto:" rows="15" cols="55" id="descricao" name="descricao" required></textarea>
+        </div>
+        <br>
+        <div id="data_cadastro">
+        <label for="data">Data de Cadastro:</label>
+        <input id="data" type="date" name="data" required>
+        </div>
+        <br>
+        <div id="dis_produto">
+        <h2>Esse Produto está Disponível?</h2>
+        <label for="disponivel">Disponível</label>
+        <input id="disponivel" type="radio" name="disponibilidade" value="disponivel" required>
+        <label for="indisponivel">Indisponível</label>
+        <input id="indisponivel" type="radio" name="disponibilidade" value="indisponivel">
+        </div>
+        <br>
+        <div id="foto_produto">
+        <label for="foto">Foto do Produto:</label>
+        <input id="foto" type="file" name="foto" required>
+        </div>
+        <br>
+        <div id="botoes">
+        <input id="botao" type="submit" value="Enviar Produto">
+        <button type="reset">Limpar Campos</button>
+        </div>
+    </form>
+    
+</body>
+</html>
